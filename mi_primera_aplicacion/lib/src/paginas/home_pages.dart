@@ -15,6 +15,7 @@ class _home_pagesState extends State<home_pages> {
       appBar: AppBar(
         title: Text('Texto_APPBAR'),
       ),
+
       body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -26,16 +27,64 @@ class _home_pagesState extends State<home_pages> {
           ),
         ],
       )),
-      floatingActionButton: FloatingActionButton(
-        child: Text('+'),
-        onPressed: () {
-          contador = contador + 1;
-          setState(() {
-            
-          });
-        },
-        
-      ),
+
+      floatingActionButton: crearbotones(),
+
     );
+  }
+
+  Widget crearbotones() {
+return Row(
+  mainAxisAlignment: MainAxisAlignment.end,
+  children: [boton3(),
+  Expanded(child: SizedBox()),boton2(),boton1()],);
+  }
+
+  Widget boton3(){
+    return FloatingActionButton(
+      child: Text('0'),
+        onPressed: cero
+    );
+  }
+
+  Widget boton2(){
+    return FloatingActionButton(
+      child: Icon(Icons.remove),
+        onPressed: resta
+    );
+  }
+
+  Widget boton1(){
+    return FloatingActionButton(
+      child: Icon(Icons.add),
+        onPressed: suma
+    );
+  }
+
+  void cero() {
+      
+          contador = 0;
+          setState(() {
+       
+          });
+        
+  }
+
+  void resta() {
+    
+          contador = contador - 1;
+          setState(() {
+       
+          });
+        
+  }
+
+  void suma() {
+     
+          contador++;
+          setState(() {
+       
+          });
+        
   }
 }
