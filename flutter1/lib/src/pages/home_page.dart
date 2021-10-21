@@ -7,10 +7,11 @@ import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget{
 
   @override
-  State<home_pages> createState() => _home_pagesState();
+  // ignore: no_logic_in_create_state
+  State<HomePage> createState() => HomePageState();
 }
 
-class _home_pagesState extends State<home_pages> {
+class HomePageState extends State<HomePage> {
   int contador = 0;
   final estilo = new TextStyle(fontSize: 35.0);
 

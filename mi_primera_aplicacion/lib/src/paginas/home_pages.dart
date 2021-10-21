@@ -37,7 +37,7 @@ class _home_pagesState extends State<home_pages> {
 return Row(
   mainAxisAlignment: MainAxisAlignment.end,
   children: [boton3(),
-  Expanded(child: SizedBox()),boton2(),boton1()],);
+  Expanded(child: SizedBox()),boton2(),boton1()]);
   }
 
   Widget boton3(){
