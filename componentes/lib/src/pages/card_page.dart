@@ -19,15 +19,14 @@ class CardPage extends StatefulWidget {
         padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 10.0),
         children: <Widget>[
           _cardTipo1(),
-          SizedBox(height: 40,),_cardTipo2()
+          SizedBox(height: 40,),Container(child: _cardTipo2(),)
         ],
       )
     );
   }
 
   Widget _cardTipo1() {
-    return Card(
-      
+    return Card(  
       elevation: 20.0,
      shape: RoundedRectangleBorder(
        borderRadius: BorderRadius.circular(50.0)),
@@ -66,12 +65,14 @@ class CardPage extends StatefulWidget {
      ),
      child: Column(
        children: [
-         FadeInImage(
-         //image: NetworkImage('https://klsdental.es/wp-content/uploads/2018/10/travel-landscape-01.jpg'), 
-         image: NetworkImage(imagen),
-         placeholder: AssetImage('assets/jar-loading.gif'),
-         fadeInDuration: Duration( milliseconds: 300),
+         Container(
+           child: FadeInImage(
+           //image: NetworkImage('https://klsdental.es/wp-content/uploads/2018/10/travel-landscape-01.jpg'), 
+           image: NetworkImage(imagen),
+           placeholder: AssetImage('assets/jar-loading.gif'),
+           fadeInDuration: Duration( milliseconds: 300),
        ),
+         ),
        Text("${numero}")
        ],
      ),
@@ -95,7 +96,7 @@ class CardPage extends StatefulWidget {
  }
 
   Widget _cardTipo3() {
-   final card = Card(
+   final card = Card( 
      clipBehavior: Clip.antiAlias,
      elevation: 10.0,
      shape: RoundedRectangleBorder(
@@ -108,6 +109,7 @@ class CardPage extends StatefulWidget {
          image: NetworkImage('https://cdn.shopify.com/s/files/1/0448/3609/4115/products/RM6BANG1_670x.png?v=1598480605'),
          placeholder: AssetImage('assets/jar-loading.gif'),
          fadeInDuration: Duration( milliseconds: 300),
+         fit: BoxFit.fitWidth,
        ),
        Text('Imagen')
        ],
@@ -130,6 +132,4 @@ class CardPage extends StatefulWidget {
       ),
     );
  }
-
-
 }

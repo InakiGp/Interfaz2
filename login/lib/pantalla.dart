@@ -32,6 +32,9 @@ class _pantallaaState extends State<pantallaa> {
             ),
         ]
       ),
-    );
+      body: Column(
+        children: [SizedBox(height: 200,), Image(image: NetworkImage("https://www.linuxadictos.com/wp-content/uploads/Flutter.png"))],
+      )
+        );
   }
 }

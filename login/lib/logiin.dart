@@ -13,7 +13,8 @@ class _loginState extends State<login> {
   String usuariooo = 'Juan';
   bool miValor = false;
   String contraseniaaa = '123456';
-  bool estado = true;
+  bool estado = false;
+  double valor = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +22,12 @@ class _loginState extends State<login> {
         title: Text('LOGIN'),
       ),
       body: Column(
-        children: [ SizedBox(height: 20,), usuario(),Divider(),contrasenia(),boton1(),boton2()],
+        children: [ SizedBox(height: 20,), usuario(),Divider(),contrasenia(),boton1(),Divider(),Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Edad'),edad(),SizedBox(width: 20,),Text(valor.toStringAsFixed(0))
+          ],
+        ),SizedBox(height: 5.0,),boton2()],
       ),
     );
   }
@@ -184,4 +190,18 @@ class _loginState extends State<login> {
             );
   });
   }
+
+ Widget edad() {
+   return Slider(
+     onChanged: (double value) {
+       setState(() {
+         valor = value;
+       });
+      }, 
+     value: valor,
+     min: 0,
+     max: 100
+   );
+  }
+  
 }

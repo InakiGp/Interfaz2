@@ -22,14 +22,14 @@
             "texto": "Animated Container"
         },
         {
-            "ruta" : "inputs",
+            "ruta" : "slider",
             "icon" : "input",
             "texto": "Inputs"
         },
         {
             "ruta" : "list",
             "icon" : "list",
-            "texto": "Lista"
+            "texto": "Lista y Scroll"
         }
     ]
 }
