@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:interfaz2/http/Login.dart';
+import 'package:practica_login/Providerr/Login.dart';
 
 
-class Providerr extends ChangeNotifier {
+class Providerr2 extends ChangeNotifier {
 
-  String _apiKey = '1E903-mQ_D3jJDSUsvCe62bo3yDqzp-xgrHTw46iWccU';
+  String _apiKey = '19JoQsyFkXqwi00cdJ8PcYlSHs9-UXNGRdTPrfMuTEgU';
   String _baseUrl = 'opensheet.vercel.app';
-  String _nombreDeLaHoja = '1';
+  String _nombreDeLaHoja = 'prac';
 
   List<Result> lista = [];
 
-  Providerr(){
+  Providerr2(){
     print("Iniciado");
     this.getOnDisplay();
   }
