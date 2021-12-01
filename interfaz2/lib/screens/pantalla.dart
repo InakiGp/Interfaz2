@@ -70,7 +70,7 @@ class Carta extends StatelessWidget {
             contentPadding: EdgeInsets.fromLTRB(15, 10, 25, 0),
             title: Text('Chia Díaz, Margarita',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
             subtitle: Text(
-              '\nI.E.S. Llanes\nPerfil Direcciónn',
+              '\nI.E.S. Llanes\nPerfil Direcciónnn',
               style: TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
