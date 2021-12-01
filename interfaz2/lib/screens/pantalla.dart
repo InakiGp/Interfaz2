@@ -68,7 +68,7 @@ class Carta extends StatelessWidget {
         children: [
           ListTile(
             contentPadding: EdgeInsets.fromLTRB(15, 10, 25, 0),
-            title: Text('Chia Díaz, Margarita',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+            title: Text('Chia Díaz, Margaritaa',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
             subtitle: Text(
               '\nI.E.S. Llanes\nPerfil Direcciónnn',
               style: TextStyle(
