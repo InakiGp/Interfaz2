@@ -12,6 +12,7 @@ class Pantalla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       resizeToAvoidBottomInset: false,
       bottomNavigationBar: NavigatorBar(),
       body: Stack(
         children: [

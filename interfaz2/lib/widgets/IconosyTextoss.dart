@@ -57,9 +57,6 @@ class IconosyTextos extends StatelessWidget {
       ),
     );
   }
-
-
-
     /*
     Center(
               child: Column(children: <Widget>[

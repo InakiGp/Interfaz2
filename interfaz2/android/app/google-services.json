@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "99230715156",
+    "project_id": "signin-70f16",
+    "storage_bucket": "signin-70f16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99230715156:android:6ecbd3530f21f52cde4601",
+        "android_client_info": {
+          "package_name": "com.example.interfaz2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99230715156-f97jll3k4a11pp4ubu74q9d3htshafli.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.interfaz2",
+            "certificate_hash": "76527d9947d564cfbce23154e2666dfa51703a27"
+          }
+        },
+        {
+          "client_id": "99230715156-4h328qe37lskp520o44cqv4f8lvqpldk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1RJNVTJEgPXSF86EQku5iGpaW9w4DfHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99230715156-4h328qe37lskp520o44cqv4f8lvqpldk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
